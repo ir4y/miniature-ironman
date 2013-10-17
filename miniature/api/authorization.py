@@ -29,7 +29,7 @@ class AuthorizationWithObjectPermissions(DjangoAuthorization):
             permission = '%s.add_%s' % (klass._meta.app_label,
                                         klass._meta.module_name)
 
-            if not bundle.request.user.has_perm(permission, bundle.obj):
+            if not bundle.request.user.has_perm(permission):
                 raise Unauthorized(
                     "You are not allowed to access that resource.")
 
