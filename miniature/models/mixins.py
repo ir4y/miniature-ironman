@@ -79,7 +79,7 @@ def SlugTraits(base_filed_name='name'):
         При сохранении записываем slug от указанного поля в новое поле
         """
         original_text = getattr(self, base_filed_name)
-        slug_text = pytils.translit.slugify(original_text)
+        slug_text = pytils.translit.slugify(original_text)[:150]
         setattr(self, fileld_name, slug_text)
         return super(_SlugMixin, self).save(**kwargs)
     setattr(_SlugMixin, 'save', save)
