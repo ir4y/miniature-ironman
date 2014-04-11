@@ -16,7 +16,7 @@ setup(
     url='https://github.com/ir4y/miniature-ironman',
     packages=['miniature'],
     include_package_data=True,
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'pytils', 'funcy'],
     zip_safe=False,
     classifiers=[
     'Development Status :: 4 - Beta',

@@ -1,3 +1,2 @@
-VERSION = (0, 0, 3)
+VERSION = (0, 0, 4)
 __author__ = 'ir4y'
-#TODO: Add tests

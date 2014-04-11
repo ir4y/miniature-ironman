@@ -6,3 +6,4 @@ db
 .ropeproject/
 dist/
 miniature_ironman.egg-info/
+*.swp
