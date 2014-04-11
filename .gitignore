@@ -2,3 +2,7 @@
 *.pot
 *.pyc
 local_settings.py
+db
+.ropeproject/
+dist/
+miniature_ironman.egg-info/

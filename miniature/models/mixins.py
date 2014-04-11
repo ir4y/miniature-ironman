@@ -70,7 +70,8 @@ def SlugTraits(base_filed_name='name'):
         fileld_name: models.SlugField(verbose_name=_(u'Название для url'),
                                       max_length=150, blank=True, null=True)
     }
-    _SlugMixin = create_model('SlugMixin', fields=fields, module='main.models',
+    _SlugMixin = create_model('SlugMixin', fields=fields,
+                              module='miniature.models.mixins',
                               options={'abstract': True})
 
     def save(self, **kwargs):
