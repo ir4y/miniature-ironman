@@ -7,3 +7,5 @@ db
 dist/
 miniature_ironman.egg-info/
 *.swp
+.tox
+build
